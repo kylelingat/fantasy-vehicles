@@ -6,7 +6,7 @@ class Vehicle {
   }
 
   get VehicleDetails() {
-    return 'Your vehicle is a ' + this.type + ' made by ' + this.make + ' and is ' + this.color;
+    return `Your vehicle is a ${this.type}, made by ${this.make}, and is ${this.color}`;
   }
 
   set vehicleColor(vehicleColor) {
