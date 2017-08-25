@@ -58,7 +58,7 @@ class Motorcycle extends Vehicle {
 
 
 let car = new Vehicle('Toyota', 'Silver', 'Tacoma',);
-let lambo = new SuperCar('Me', 'Black', 'Lambo', '90mph', '$30', '90000', '4000');
+let lambo = new SuperCar('Me', 'Black', 'Lambo', '90mph', '$30', 90000, 4000);
 let bike = new Motorcycle('Ducatti', 'Black & Red', 'Motorcycle', '130mph', '$3.25')
 console.log(car.VehicleDetails);
 console.log(lambo.superCarDetails);
