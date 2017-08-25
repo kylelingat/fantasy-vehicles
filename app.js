@@ -16,17 +16,19 @@ class Vehicle {
 
 
 class SuperCar extends Vehicle {
-  constructor(make, color, type, topSpeed, cost) {
+  constructor(make, color, type, topSpeed, cost, attractionLevel, techLevel) {
     super(make, color, type);
     this.make = make;
     this.color = color;
     this.type = type;
     this.topSpeed = topSpeed;
     this.cost = cost;
+    this.attractionLevel = attractionLevel;
+    this.techLevel = techLevel;
   }
 
  get superCarDetails() {
-    return super.VehicleDetails + `with a top speed of ${this.topSpeed} and a cost of ${this.cost} `;
+    return super.VehicleDetails + `with a top speed of ${this.topSpeed}, a cost of ${this.cost}, an attraction level of ${this.attractionLevel} and a tech level of ${this.techLevel} `;
   }
 
   set priceTag(cost) {
@@ -56,10 +58,10 @@ class Motorcycle extends Vehicle {
 
 
 let car = new Vehicle('Toyota', 'Silver', 'Tacoma',);
-let supahCar = new SuperCar('Me', 'Black', 'Lambo', '90mph', '$30');
+let lambo = new SuperCar('Me', 'Black', 'Lambo', '90mph', '$30', '90000', '4000');
 let bike = new Motorcycle('Ducatti', 'Black & Red', 'Motorcycle', '130mph', '$3.25')
 console.log(car.VehicleDetails);
-console.log(supahCar.superCarDetails);
+console.log(lambo.superCarDetails);
 console.log(bike.bikeDetails);
 
 
